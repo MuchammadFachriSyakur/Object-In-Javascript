@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //Membuat objects dengan cara literal
+    const mhs = {
+        nama: "Muchammad Fachri Syakur",
+        kelas: "10 PPLG 2",
+        nilaiBahasaInggris: [87,85,83,86,85],
+        rataRataNilaiBahasaInggris: function rataRataNilai(){
+            let total = 0;
+            const bahasaInggris = this.nilaiBahasaInggris;
+            for(let i = 0; i < bahasaInggris.length; i ++){
+                total += bahasaInggris[i];
+            }
+            return total / bahasaInggris.length;
+        }
+    }
+    console.log(mhs.rataRataNilaiBahasaInggris());
+</script>
+</body>
+</html>

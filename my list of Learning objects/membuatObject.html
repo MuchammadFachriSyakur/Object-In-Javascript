@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat object pada javascript</title>
+</head>
+<body>
+
+
+<script>
+  //Membuat Objects Secara Literal
+  const siswa = {
+    nama: "Muchammad Fachri Syakur",
+    kelas: "10 PPLG 2",
+    nrp: 105677,
+    ukt: 1500000,
+    email: "muchammadfachrisyakur@ui.ac.id",
+    jurusan: "Teknik Informatika"
+  }
+  
+  //Membuat Object dengan function declarations
+  function createStudent(name,kelas,nrp,ukt){
+    const student = {};
+    student.nama = name;
+    student.class = kelas;
+    student.nrp = nrp;
+    student.ukt = ukt;
+    return student;
+  }
+  
+  //Membuat object dengan constructur
+  function siswaPPLG(nama,kelas,jurusan){
+    this.nama = nama;
+    this.kelas = kelas;
+    this.jurusan = jurusan;
+  }
+  console.log(new siswaPPLG("Achmad Fachri Faza","10","Pengembangan Perangkat Lunak Dan Game"));
+  console.log(new siswaPPLG("Aisyah","10","Pengembangan Perangkat Lunak Dan Game"));
+  console.log(new siswaPPLG("Aldriano Aufa","10","Pengembangan Perangkat Lunak Dan Game"));
+</script>
+</body>
+</html>
